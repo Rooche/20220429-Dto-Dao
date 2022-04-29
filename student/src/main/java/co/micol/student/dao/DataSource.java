@@ -38,10 +38,9 @@ public class DataSource { //싱글톤 class 패턴
 		return conn;
 	}
 	
-	private static void dbconfiguration() {
+	private void dbconfiguration() {
 		Properties properties = new Properties();
-//		String resource = getClass().getResource("db.properties").getPath();
-		String resource = getClass().getResource("db.properties").getPath();
+		String resource = getClass().getResource("/db.properties").getPath();
 		try {
 			properties.load(new FileReader(resource)); //그냥 getClass().getResource("db.properties").getPath();이거일때는 FileReader로 읽으면 됨
 			driver = properties.getProperty("driver");

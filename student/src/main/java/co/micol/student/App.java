@@ -16,13 +16,14 @@ public class App {
       
       for(StudentVO vo : list) {
     	  vo.toString();
-//      }
+      }
 //      System.out.println("========================================================================");
 //      StudentVO student = new StudentVO();
 //      student.setStudentId("parkk@abc.com");
 //      student = dao.selectStudent(student);
 //      student.toString();
 
+      	//한명추가
 		//한번 실행하면 자동으로 커밋이 되기에 같은 정보를 입력할수없음(에러가뜸)
 		//함수는 기본적으로 2가지 타입을 가지고있다
 		//procedure타입 , function타입

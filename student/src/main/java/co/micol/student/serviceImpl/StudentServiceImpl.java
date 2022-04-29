@@ -12,8 +12,8 @@ import co.micol.student.dto.StudentVO;
 import co.micol.student.service.StudentService;
 
 public class StudentServiceImpl implements StudentService {
-	private DataSource dataSource = 
-	private Connection conn = DataSource.getConnction(); // connection을 연결
+	private DataSource dataSource = DataSource.getInstance();
+	private Connection conn = dataSource.getConnction(); // connection
 	private PreparedStatement psmt; // sql명령문을 실행
 	private ResultSet rs; // select결과물을 담음
 
