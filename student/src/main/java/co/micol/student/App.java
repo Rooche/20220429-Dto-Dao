@@ -11,13 +11,13 @@ import co.micol.student.serviceImpl.StudentServiceImpl;
 public class App {
 	public static void main(String[] args) {
 		StudentService dao = new StudentServiceImpl();
-     List<StudentVO> list = new ArrayList<StudentVO>();
-     list = dao.selectListStudent();
-      
-      for(StudentVO vo : list) {
-    	  vo.toString();
-      }
-//      System.out.println("========================================================================");
+//     List<StudentVO> list = new ArrayList<StudentVO>();
+//     list = dao.selectListStudent();
+//      
+//      for(StudentVO vo : list) {
+//    	  vo.toString();
+//      }
+////      System.out.println("========================================================================");
 //      StudentVO student = new StudentVO();
 //      student.setStudentId("parkk@abc.com");
 //      student = dao.selectStudent(student);
